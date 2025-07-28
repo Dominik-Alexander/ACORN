@@ -1,15 +1,20 @@
-[build-system]
-requires = ["maturin>=1.9,<2.0"]
-build-backend = "maturin"
+[tool.poetry]
+name = "my-python-package"
+version = "0.1.0"
+description = "A simple Python package example"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
 
-[project]
-name = "acorn"
-requires-python = ">=3.8"
-classifiers = [
-    "Programming Language :: Rust",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
-]
-dynamic = ["version"]
-[tool.maturin]
-features = ["pyo3/extension-module"]
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.4.0"
+ruff = "^0.12.4"
+pytest-cov = "^6.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -9,3 +9,10 @@ dependencies:
 - loguru
 - black
 - pytest
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- cvat-sdk
+- datumaro
+- tensorflow

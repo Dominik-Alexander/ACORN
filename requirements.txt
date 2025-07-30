@@ -1,4 +1,12 @@
 poetry
 loguru
 black
+coverage
 pytest
+numpy
+pandas
+matplotlib
+seaborn
+cvat-sdk
+datumaro
+tensorflow

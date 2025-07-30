@@ -2,9 +2,7 @@ name: CI/CD for Python Package
 
 on:
   push:
-    branches: [main, development]
   pull_request:
-    branches: [main, development]
   release:
     types: [published]
 

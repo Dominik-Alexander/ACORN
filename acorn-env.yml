@@ -1,0 +1,11 @@
+name: acorn-study-env
+
+channels:
+- defaults
+- conda-forge
+
+dependencies:
+- poetry
+- loguru
+- black
+- pytest
